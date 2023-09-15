@@ -1,7 +1,12 @@
 import "./App.css";
+import Home from "./pages/Home";
 
 function App() {
-  return <div className=""></div>;
+  return (
+    <div className="max-w-[1440px]">
+      <Home />
+    </div>
+  );
 }
 
 export default App;
