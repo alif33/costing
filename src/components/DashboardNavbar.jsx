@@ -6,7 +6,7 @@ import { TiMessages } from "react-icons/ti";
 export default function DashboardNavbar() {
   return (
     <div className="flex justify-between items-center py-6">
-      <div className="">
+      <div className="hidden lg:block">
         <ul className="font-semibold text-base flex items-center gap-8">
           <li className="text-[#3E97FF]">Dashboards</li>
           <li className="text-gray-600">Pages</li>

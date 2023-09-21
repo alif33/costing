@@ -5,8 +5,8 @@ import DashbordOpen from "../components/DashbordOpen";
 export default function Dashboard() {
   return (
     <div className="bg-slate-100 min-h-screen">
-      <div className="grid grid-cols-12">
-        <div className="col-span-2 text-white min-h-screen bg-[#131313] overflow-y-hidden py-6">
+      <div className="grid lg:grid-cols-12">
+        <div className="hidden lg:block col-span-2 text-white min-h-screen bg-[#131313] overflow-y-hidden py-6">
           <div className="h-16">
             <img
               width={90}
