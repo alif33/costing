@@ -11,7 +11,7 @@ export default function Navbar() {
     setIsOpen(!isOpen);
   };
   return (
-    <div className="flex justify-between items-center px-10 h-[70px] shadow-lg">
+    <div className="hidden lg:flex justify-between items-center px-10 h-[70px] shadow-lg">
       <div className="flex justify-between items-center">
         <img src="/images/logo_comptage.png" alt="" />
         <div className="ps-12">

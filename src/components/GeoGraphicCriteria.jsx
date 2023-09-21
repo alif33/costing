@@ -1,9 +1,11 @@
+import { AiOutlineCheck, AiOutlineCloudUpload } from "react-icons/ai";
 import { BiCarousel } from "react-icons/bi";
-import { BsSignpost2Fill } from "react-icons/bs";
+import { BsChevronDown, BsSignpost2Fill } from "react-icons/bs";
 import { CiLollipop } from "react-icons/ci";
 import { FaMapLocationDot } from "react-icons/fa6";
 import { FcCursor } from "react-icons/fc";
 import { GrMapLocation } from "react-icons/gr";
+import { LiaPasteSolid, LiaSearchSolid } from "react-icons/lia";
 import { MdLocationPin } from "react-icons/md";
 import { PiSignpostLight } from "react-icons/pi";
 
@@ -76,9 +78,12 @@ export default function GeoGraphicCriteria() {
             <label className="text-[#6C7293]">To research :</label>
             <div className="flex items-center border-[1px] rounded border-[#6C7293]">
               <div className="py-2 px-3 border-r-[1px] border-solid border-[#6C7293] bg-[#FFFFFF]">
-                <FcCursor size={25} />
+                <LiaSearchSolid size={22} />
               </div>
               <input type="text" className="w-full outline-none py-2 px-3" />
+              <div className="pr-3">
+                <BsChevronDown />
+              </div>
             </div>
             <label className="text-xs text-[#6C7293]">
               You can search for one or more regions
@@ -88,9 +93,13 @@ export default function GeoGraphicCriteria() {
             <label className="text-[#6C7293]">Copy paste :</label>
             <div className="flex items-center border-[1px] rounded border-[#6C7293]">
               <div className="py-2 px-3 border-r-[1px] border-solid border-[#6C7293] bg-[#FFFFFF]">
-                <FcCursor size={25} />
+                <LiaPasteSolid size={22} />
               </div>
-              <input type="text" className="w-full outline-none py-2 px-3" />
+              <textarea type="text" className="w-full outline-none py-2 px-3" />
+              <div className="flex gap-1 px-1 w-2/5 items-center border-l-[1px] border-solid border-[#6C7293]">
+                <AiOutlineCheck size={15} />
+                <span className="">To validate</span>
+              </div>
             </div>
             <label className="text-xs text-[#6C7293]">
               You can copy and paste one or more regions (1000 maximum)
@@ -100,9 +109,12 @@ export default function GeoGraphicCriteria() {
             <label className="text-[#6C7293]">Send a file :</label>
             <div className="flex items-center border-[1px] rounded border-[#6C7293]">
               <div className="py-2 px-3 border-r-[1px] border-solid border-[#6C7293] bg-[#FFFFFF]">
-                <FcCursor size={25} />
+                <AiOutlineCloudUpload size={22} />
               </div>
               <input type="text" className="w-full outline-none py-2 px-3" />
+              <div className="text-[#6C7293] py-2 px-3 border-l-[1px] border-solid border-[#6C7293] bg-[#FFFFFF]">
+                <span>Parcourir</span>
+              </div>
             </div>
             <label className="text-xs text-[#6C7293]">
               You can send a file listing your regions

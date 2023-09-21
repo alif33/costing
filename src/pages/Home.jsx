@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <div>
       <Navbar />
-      <div className="ps-14 pr-7">
+      <div className="px-5 lg:ps-14 lg:pr-7">
         <Layout />
       </div>
     </div>
