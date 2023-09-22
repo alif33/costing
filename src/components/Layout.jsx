@@ -1,4 +1,6 @@
 import { BiTargetLock } from "react-icons/bi";
+import LayoutFiles from "./LayoutFiles";
+import Sidebar from "./Sidebar";
 
 export default function Layout() {
   return (
@@ -9,12 +11,10 @@ export default function Layout() {
           <BiTargetLock size={20} />
           <span className="text-[var(--nbgrisfonce)]">Individuals (B2C)</span>
         </div>
+        <LayoutFiles />
       </div>
-      <div className="col-span-3 h-screen bg-white ps-6">
-        <div className="flex gap-2 items-center text-[var(--nbviolet)] font-medium text-lg py-5">
-          <BiTargetLock size={22} />
-          <h1>YOUR TARGETING</h1>
-        </div>
+      <div className="col-span-3 bg-white shadow-xl">
+        <Sidebar />
       </div>
     </div>
   );
